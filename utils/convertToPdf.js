@@ -10,6 +10,7 @@ module.exports = (unzipPath, fileName) => {
     const pdfPath = path.join('pdfTEMP', fileName + '.pdf')
     return new Promise((resolve, reject) => {
         const start = performance.now()
+        //запуск процесса wkhtmltopdf
         exec(`wkhtmltopdf --allow ${unzipPath} ${unzipPath}\\index.html ${pdfPath}`, (err, stdout, stderr) => {
             if (err) {
                 reject(err)
