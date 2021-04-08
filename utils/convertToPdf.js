@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const {performance} = require('perf_hooks')
 
-//Конвертирует html с css и изображениями из папки unzipedTEMP в pdf, затем удаляет их.
+//Конвертирует html с css и изображениями из папки unzipedTEMP в pdf в папку pdfTEMP, затем удаляет их.
 //Возвращает объект, который содержит путь к pdf файлу и время конвертации.
 module.exports = (unzipPath, fileName) => {
     let time = 0
