@@ -1,8 +1,8 @@
 const formidable = require('formidable')
 const path = require('path')
 
-//Загрузка .zip файла и сохраненение с уникальным именем в папке uploadTEMP
-//Возвращает объект, в внутри которого file с информацией о загруженном файле и originalName - оригинальное имя файла
+//Загрузка .zip файла и сохраненение с уникальным именем в папке uploadTEMP.
+//Возвращает объект, в внутри которого file с информацией о загруженном файле и originalName - оригинальное имя файла.
 module.exports = (req) => {
     let originalName = ''
     const form = formidable({ maxFileSize: 200 * 1024 * 1024 * 1024 })

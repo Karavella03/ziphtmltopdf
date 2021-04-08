@@ -9,6 +9,7 @@
   "author": "Nikita Karavatsky",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.5.5",
     "formidable": "^1.2.2"
   }
 }
